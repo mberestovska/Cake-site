@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Cakes to order
+    </title>
+    <link rel="stylesheet" type="text/css" href="cake_keksbi.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ruslan+Display" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="container m-30-a">
+            <h2 style="font-size: 23pt" class="fl-l left-part">Cakes</h2>
+            <!--style inside-->
+            <div class="main-nav">
+                <ul class="navigation">
+                    <li><a href="#our-cakes">Наші торти</a></li>
+                    <li><a href="#individual-order">Індивідуальне замовлення</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                    <li><a href="#about-us">Про нас</a></li>
+                    <li><a href="#how-to-order">Як замовити</a></li>
+                    <li><a href="#contacts">Kонтакти</a></li>
+                </ul>
+            </div>
+            <h2 style="font-size: 15pt" class="fl-r right-part">+38 050 111 22 33</h2>
+            <!--style inside-->
+            <div class="header-2">
+                <h1 class="head-line">Торти на <br>замовлення</h1>
+                <h2 class="head-line-2">Ручна робота</h2>
+                <button class="choose-cake">ВИБРАТИ ТОРТ</button>
+
+
+                <div class="features">
+                    <ul class="clearfix">
+                        <li class="feature-item feature-ingred">Натуральні<br>інгредієнти</li>
+                        <li class="feature-item feature-delivery">Доставка безплатно<br> від 1000 грн*</li>
+                    </ul>
+                    <h2 class="article-title">Наші Торти</h2>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- MAIN PART-->
+    <div class="container clearfix m-0-a">
+        <div class="ourcakes">
+            <div class="line1">
+                <div class="cake-card classic">
+                    <h6>Класичні</h6>
+                    <p>24 вида</p>
+                    <img class="cake-semple" src="cake_classic.png" alt="Класичний торт, бесквіт, вершковий крем" title="Класичний торт, бесквіт, вершковий крем">
+                    <a>Переглянути &nbsp; <img src="arrow.png" alt="Переглянути всі"></a>
+                </div>
+                <div class="cake-card muss">
+                    <h6>Мусові</h6>
+                    <p>12 видов</p>
+                    <img class="cake-semple" src="cake_muss.png" alt="Муссовий торт" title="Муссовий торт">
+                    <a><img src="arrow.png" alt="Переглянути всі"></a>
+                </div>
+                <div class="cake-card wedding">
+                    <h6>Весільні</h6>
+                    <p>20 видов</p>
+                    <img class="cake-semple" src="cake_wedding.png" alt="Весільний торт" title="Весільний торт">
+                    <a><img src="arrow.png" alt="Переглянути всі"></a>
+                </div>
+            </div>
+            <div class="line2">
+                <div class="cake-card men">
+                    <h6>Чоловікам</h6>
+                    <p>12 видов</p>
+                    <img class="cake-semple" src="cake_men.png" alt="Чоловікам" title="Чоловікам">
+                    <a><img src="arrow.png" alt="Переглянути всі"></a>
+                </div>
+                <div class="cake-card women">
+                    <h6>Жінкам</h6>
+                    <p>16 видов</p>
+                    <img class="cake-semple" src="cake_women.png" alt="Жінкам" title="Жінкам">
+                    <a><img src="arrow.png" alt="Переглянути всі"></a>
+                </div>
+                <div class="cake-card kids">
+                    <h6>Дітям</h6>
+                    <p>18 видов</p>
+                    <img class="cake-semple" src="cake_kids.png" alt="Дітям" title="Дітям">
+                    <a><img src="arrow.png" alt="Переглянути всі"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container clearfix m-30-a h-1850">
+        <h2 class="article-title t-a-center">Індивідуальне замовлення</h2>
+        <h2 class="t-a-center">Зберіть власний торт в 3 кроки</h2>
+        <div class="article">
+            <div class="step step-1">
+                <div class="part1">
+                    <p class="number">01</p>
+                    <p class="text">Оберіть<br>начинку</p>
+                </div>
+                <div class="part2">
+                    <div class="side-btn btn-left btn-left-move" onclick = 'left()'></div>
+                    <img src="chocolate.png" alt="Шоколадний ганаш-1" class="show-photo">
+                    <img src="chocolate.png" alt="Шоколадний ганаш" class="cake-photo hidden">
+                    <img src="redvelvetcake.jpg" alt="Red velvet cake" class="cake-photo hidden">
+                    <img src="cake-3.jpg" alt="Cream-Filled Strawberry-Brownie Cake" class="cake-photo hidden">
+                    <div class="side-btn btn-right btn-right-move"></div>
+
+                </div>
+                <div class="part3">
+                    <h3>Шоколадний ганаш</h3>
+                    <p>Ароматний шоколадний бісквіт, густий шоколадний крем
+                        – найбільш шоколадний зі всіх можливих десертів!
+                    </p>
+                    <h3 class="price">300 грн за кг.</h3>
+                </div>
+            </div>
+
+            <div class="step step-2">
+                <div class="part1">
+                    <p class="number">02</p>
+                    <p class="text">Розмір</p>
+                </div>
+                <div class="part4">
+                    <ul class="clearfix">
+                        <li class="cake-size size-1">17-18 см (1кг - 6 персон)</li>
+                        <li class="cake-size size-2">23-24 см (10-12 персон)</li>
+                        <li class="cake-size size-3">Два яруси 25 і 20 см (15-20 персон)</li>
+                        <li class="cake-size size-4">Три яруси 30, 25 і 18 см (25-30 персон)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step step-3">
+                <div class="part1">
+                    <p class="number">03</p>
+                    <p class="text">Оформлення</p>
+                </div>
+                <div class="part5">
+                    <div class="side-btn btn-left"></div>
+                    <ul class="clearfix">
+                        <li class="topping-choise topping-1"><span>Ягідне асорті<br><b>200грн за кг</b></span></li>
+                        <li class="topping-choise topping-2"><span>Маршмеллоу<br><b>150 грн за кг</b></span></li>
+                    </ul>
+                    <div class="side-btn btn-right"></div>
+                </div>
+                <div class="part6">
+                    <h3 class="sub-title">Ваш вибір</h3>
+                    <!--ADD STYLE to that element-->
+                    <div class="order-form">
+                        <form>
+                            <label for="cake">Начинка</label><br><br>
+                            <input type="text" id="cake" name="cake">
+                        </form>
+                        <form>
+                            <label for="size">Розмір</label><br><br>
+                            <input type="text" id="size" name="size">
+                        </form>
+                        <form>
+                            <label for="topping">Оформлення</label><br><br>
+                            <input type="text" id="topping" name="topping">
+                        </form>
+                        <form>
+                            <input type="submit" value="Замовити" class="order">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container review h-400 m-0-a">
+        <h2>Відгуки</h2>
+        <div class="show-review">
+            <div class="side-btn btn-left"></div>
+            <div>
+                <dl>
+                    <dt>
+                        <img src="review.png" alt="Фото з профілю">
+                    </dt>
+                    <dd>
+                        <h3>Марія</h3>
+                        <p>юрист, 33 роки</p>
+                        <br>
+                        <p>Замовляла торт брауні на увілей чоловіка. Гості були в захваті. Окреме дякую за вчасну
+                            доставку. Тепер будемо замовляти торти тільки у вас для наших сімейний святкувань.&nbsp;<a>Повністю</a></p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="side-btn btn-right"></div>
+        </div>
+    </div>
+
+    <div class="container about-us m-0-a">
+        <div class="column column-1">
+            <h2>Про нас</h2>
+            <h3>Про кондитера</h3>
+            <h4>Кондитер - як покликання</h4>
+            <p>Павло - професійний кухар в різних гастрономічних областях, але одного разу його серце підкорило
+                кондитерське мистецтво. З ранніх років він захоплювався витонченою майстерністю і звернувся до своїх
+                талантів як кондитер.</p>
+            <h4>Принцип - натуральні інгредієнти</h4>
+            <p>Сьогодні Павло радує виробами не тільки близьких, але і тих, хто вважає за краще якісну продукцію для
+                торжества, а головним принципом є вибір натуральних інгредієнтів.</p>
+            <div class="social-icons">
+                <div class="social instagram"><a href="#instagram_page"></div>
+                <div class="social vk"><a href="#vk_page"></a></div>
+                <div class="social twitter"><a href="#twitter_page"></a></div>
+            </div>
+        </div>
+        <div class="column">
+            <img src="chef.png" alt="Наш шеф" title="Наш шеф">
+        </div>
+    </div>
+
+    <div class="container quote m-0-a">
+        <img src="right-quote.png">
+        <blockquote>Я за прості рецепти. В Італії це називають<br>cucina povera: коли звичайні інгредієнти<br>перетворюються
+            в божественне блюдо.</blockquote>
+        <img src="signature.png" alt="Підпис шефа">
+    </div>
+
+    <div class="container-full-w features-1">
+        <div class="container our-features m-0-a">
+            <h2>Наші переваги</h2>
+            <h3>Чому обирають нас?</h3>
+            <div class="block-features">
+                <ul class="clearfix">
+                    <li class="item item-product"><b>Без штучних добавок</b><br>Використовуємо натуральні інгредієнти і
+                        свіжі продукти.</b></li>
+                    <li class="item item-cake"><b>Свіжий торт в день свята</b><br>Торти виготовляються протягом доби до
+                        відправлення</li>
+                </ul>
+            </div>
+        </div>
+        <div class="block-clients container m-0-a">
+            <div class="client">
+                <h2>Турбота про клієнтів</h2>
+                <h3>Для нас важливо</h3>
+                <p>Нам важливо щоб кожен торт був бездоганним, як зовні так і з середини, щоб він був створений
+                    виключно
+                    для вас і вашого свята.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-full-w how-to-order">
+        <div class="card-logo">
+            <img src="logo_cakes.png" alt="logo-CAKES">
+        </div>
+        <div class="block-how">
+            <h3>Як замовити</h3>
+            <ol>
+                <li>
+                    <p><b>Термін замовлення</b><br>
+                        Розмфщувати замовлення бажано за 2-3 дня.
+                        На вихідні замовлення краще розміщувати за тиждень.</p>
+                </li>
+                <li>
+                    <p><b>Доставка по місту</b><br>Доставка по місту 50грн, при замовленні на суму більше 1000грн.
+                        доставка безкоштовна.</p>
+                </li>
+                <li>
+                    <p><b>Доставка за місто</b><br>Доставка за межами міста розраховується індивідуально.</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="container-full-w contacts-1">
+        <div class="container contacts">
+            <div>
+                <h2>Контакти</h2>
+                <h3>Залишились питання</h3>
+                <p>Заповніть форму нижче і наш кондитер зв'яжеться з Вами</p>
+                <form class="sent-mail">
+                    <input type="text" name="name_input" placeholder="Ваше ім'я..">
+                    <input type="text" name="name_input" placeholder="Email адрес..">
+                    <input type="text" name="name_input" placeholder="Ваше питання..">
+                    <input type="submit" value="Відправити" class="order">
+                </form>
+            </div>
+            <div class="right-side">
+                <p>Або зателефонуйте за телефоном:</p>
+                <p>+38 050 111 22 33</p>
+                <p>Наш E-mail:</p>
+                <p>bakerybypavel@list.ua</p>
+                <p>Ми в соц.мережах</p>
+                <div class="social-icons">
+                    <div class="social instagram"><a href="#instagram_page"></div>
+                    <div class="social vk"><a href="#vk_page"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container m-0-a page-footer">
+            <h2 style="font-size: 23pt" class="fl-l left-part p-25-0">Cakes</h2>
+            <div class="main-nav p-25-0">
+                    <ul class="navigation">
+                        <li><a href="#our-cakes">Наші торти</a></li>
+                        <li><a href="#individual-order">Індивідуальне замовлення</a></li>
+                        <li><a href="#reviews">Відгуки</a></li>
+                        <li><a href="#about-us">Про нас</a></li>
+                        <li><a href="#how-to-order">Як замовити</a></li>
+                        <li><a href="#contacts">Kонтакти</a></li>
+                    </ul>
+            </div>
+            <div class="fl-r social-footer">
+                    <div class="social instagram"><a href="#instagram_page"></div>
+                    <div class="social vk"><a href="#vk_page"></a></div>
+            </div>
+            <div class="line"></div>
+            <p class="copyright">&#9400; 2018 Cakes</p>
+        </div>
+    </footer>
+</body>
+
+</html>
