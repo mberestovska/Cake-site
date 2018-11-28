@@ -6,9 +6,9 @@
     <title>
         Cakes to order
     </title>
-    <link rel="stylesheet" type="text/css" href="cake_keksbi.css">
+    <link rel="stylesheet" type="text/css" href="cake_keksbi_2].css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ruslan+Display" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
+    
 
 </head>
 
@@ -50,7 +50,7 @@
     </header>
     <!-- MAIN PART-->
     <div class="container clearfix m-0-a">
-        <div class="ourcakes">
+        <div class="ourcakes" id="our-cakes">
             <div class="line1">
                 <div class="cake-card classic">
                     <h6>Класичні</h6>
@@ -94,87 +94,120 @@
         </div>
     </div>
 
-    <div class="container clearfix m-30-a h-1850">
-        <h2 class="article-title t-a-center">Індивідуальне замовлення</h2>
-        <h2 class="t-a-center">Зберіть власний торт в 3 кроки</h2>
-        <div class="article">
-            <div class="step step-1">
-                <div class="part1">
-                    <p class="number">01</p>
-                    <p class="text">Оберіть<br>начинку</p>
+    <div class="container clearfix m-30-a h-1850" id="individual-order">
+            <h2 class="article-title t-a-center">Індивідуальне замовлення</h2>
+            <h2 class="t-a-center">Зберіть власний торт в 3 кроки</h2>
+            <div class="article">
+                <div class="step step-1">
+                    <div class="part1">
+                        <p class="number">01</p>
+                        <p class="text">Оберіть<br>начинку</p>
+                    </div>
+                    <div class="part2">
+                        <div class="side-btn btn-left btn-left-move"></div>
+                        <div class="karusel-1">
+                            <ul class="slider">
+                                <li class="cake-1">
+                                    <img src="chocolate.png" alt="Шоколадний ганаш" class="cake-photo photo-1">
+                                </li>
+                                <li class="cake-1">
+                                    <div class="description">
+                                        <h3>Шоколадний ганаш</h3>
+                                        <p>Ароматний шоколадний бісквіт, густий шоколадний крем
+                                            – найбільш шоколадний зі всіх можливих десертів!
+                                        </p>
+                                        <h3 class="price">200 грн за кг.</h3>
+                                    </div>
+                                </li>
+                                <li class="cake-2">
+                                    <img src="redvelvetcake.jpg" alt="Red velvet cake" class="cake-photo photo-2">
+                                </li>
+                                <li class="cake-2">
+                                    <div class="description">
+                                        <h3>Вершковий сир</h3>
+                                        <p>Червоний бархатний бесквіт з начинкою з вершкового сиру</p>
+                                        <h3 class="price">230 грн за кг.</h3>
+                                    </div>
+                                </li>
+                                <li class="cake-3">
+                                    <img src="cake-3.jpg" alt="Cream-Filled Strawberry-Brownie Cake" class="cake-photo photo-3">
+                                </li>
+                                <li class="cake-3">
+                                    <div class="description">
+                                        <h3>Полуниця Маскарпоне</h3>
+                                        <p>Ванільний корж начинений свіжою полуницею та збитим маскарпоне. Це ідеальне
+                                            поєднання ягід та кремового тортика.</p>
+                                        <h3 class="price">250 грн за кг.</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="side-btn btn-right btn-right-move"></div>
+                    </div>
+    
                 </div>
-                <div class="part2">
-                    <div class="side-btn btn-left btn-left-move" onclick = 'left()'></div>
-                    <img src="chocolate.png" alt="Шоколадний ганаш-1" class="show-photo">
-                    <img src="chocolate.png" alt="Шоколадний ганаш" class="cake-photo hidden">
-                    <img src="redvelvetcake.jpg" alt="Red velvet cake" class="cake-photo hidden">
-                    <img src="cake-3.jpg" alt="Cream-Filled Strawberry-Brownie Cake" class="cake-photo hidden">
-                    <div class="side-btn btn-right btn-right-move"></div>
-
+    
+                <div class="step step-2">
+                    <div class="part1">
+                        <p class="number">02</p>
+                        <p class="text">Розмір</p>
+                    </div>
+                    <div class="part4">
+                        <ul class="clearfix">
+                            <li class="cake-size size-1">17-18 см (1кг - 6 персон)</li>
+                            <li class="cake-size size-2">23-24 см (10-12 персон)</li>
+                            <li class="cake-size size-3">Два яруси 25 і 20 см (15-20 персон)</li>
+                            <li class="cake-size size-4">Три яруси 30, 25 і 18 см (25-30 персон)</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="part3">
-                    <h3>Шоколадний ганаш</h3>
-                    <p>Ароматний шоколадний бісквіт, густий шоколадний крем
-                        – найбільш шоколадний зі всіх можливих десертів!
-                    </p>
-                    <h3 class="price">300 грн за кг.</h3>
-                </div>
-            </div>
-
-            <div class="step step-2">
-                <div class="part1">
-                    <p class="number">02</p>
-                    <p class="text">Розмір</p>
-                </div>
-                <div class="part4">
-                    <ul class="clearfix">
-                        <li class="cake-size size-1">17-18 см (1кг - 6 персон)</li>
-                        <li class="cake-size size-2">23-24 см (10-12 персон)</li>
-                        <li class="cake-size size-3">Два яруси 25 і 20 см (15-20 персон)</li>
-                        <li class="cake-size size-4">Три яруси 30, 25 і 18 см (25-30 персон)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="step step-3">
-                <div class="part1">
-                    <p class="number">03</p>
-                    <p class="text">Оформлення</p>
-                </div>
-                <div class="part5">
-                    <div class="side-btn btn-left"></div>
-                    <ul class="clearfix">
-                        <li class="topping-choise topping-1"><span>Ягідне асорті<br><b>200грн за кг</b></span></li>
-                        <li class="topping-choise topping-2"><span>Маршмеллоу<br><b>150 грн за кг</b></span></li>
-                    </ul>
-                    <div class="side-btn btn-right"></div>
-                </div>
-                <div class="part6">
-                    <h3 class="sub-title">Ваш вибір</h3>
-                    <!--ADD STYLE to that element-->
-                    <div class="order-form">
-                        <form>
-                            <label for="cake">Начинка</label><br><br>
-                            <input type="text" id="cake" name="cake">
-                        </form>
-                        <form>
-                            <label for="size">Розмір</label><br><br>
-                            <input type="text" id="size" name="size">
-                        </form>
-                        <form>
-                            <label for="topping">Оформлення</label><br><br>
-                            <input type="text" id="topping" name="topping">
-                        </form>
-                        <form>
-                            <input type="submit" value="Замовити" class="order">
-                        </form>
+    
+                <div class="step step-3">
+                    <div class="part1">
+                        <p class="number">03</p>
+                        <p class="text">Оформлення</p>
+                    </div>
+                    <div class="part5">
+                        <div class="side-btn btn-left move-left"></div>
+                        <div class="karusel-2 clearfix">
+                            <ul>
+                                <li class="topping-choise topping-1"><span>Ягідне асорті<br><b>200грн за кг</b></span></li>
+                                <li class="topping-choise topping-2"><span>Маршмеллоу<br><b>150 грн за кг</b></span></li>
+                                <li class="topping-choise topping-3"><span>Хрусткі горішки<br><b>200грн за кг</b></span></li>
+                                <li class="topping-choise topping-4"><span>Шоколадне обрамлення<br><b>200грн за кг</b></span></li>
+                                <li class="topping-choise topping-5"><span>Спокусливі квіти<br><b>200грн за кг</b></span></li>
+                                <li class="topping-choise topping-6"><span>Улюблені герої<br><b>200грн за кг</b></span></li>
+                                <li class="topping-choise topping-7"><span>Кремові рози<br><b>200грн за кг</b></span></li>
+                            </ul>
+                        </div>
+                        <div class="side-btn btn-right move-right"></div>
+                    </div>
+                    <div class="part6">
+                        <h3 class="sub-title">Ваш вибір</h3>
+                        <!--ADD STYLE to that element-->
+                        <div class="order-form">
+                            <form>
+                                <label for="cake">Начинка</label><br><br>
+                                <input type="text" id="cake" name="cake">
+                            </form>
+                            <form>
+                                <label for="size">Розмір</label><br><br>
+                                <input type="text" id="size" name="size">
+                            </form>
+                            <form>
+                                <label for="topping">Оформлення</label><br><br>
+                                <input type="text" id="topping" name="topping">
+                            </form>
+                            <form>
+                                <input type="submit" value="Замовити" class="order">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 
-    <div class="container review h-400 m-0-a">
+    <div class="container review h-400 m-0-a" id="reviews">
         <h2>Відгуки</h2>
         <div class="show-review">
             <div class="side-btn btn-left"></div>
@@ -196,7 +229,7 @@
         </div>
     </div>
 
-    <div class="container about-us m-0-a">
+    <div class="container about-us m-0-a" id="about-us">
         <div class="column column-1">
             <h2>Про нас</h2>
             <h3>Про кондитера</h3>
@@ -249,7 +282,7 @@
         </div>
     </div>
 
-    <div class="container-full-w how-to-order">
+    <div class="container-full-w how-to-order" id="how-to-order">
         <div class="card-logo">
             <img src="logo_cakes.png" alt="logo-CAKES">
         </div>
@@ -273,7 +306,7 @@
     </div>
 
     <div class="container-full-w contacts-1">
-        <div class="container contacts">
+        <div class="container contacts" id="contacts">
             <div>
                 <h2>Контакти</h2>
                 <h3>Залишились питання</h3>
@@ -303,23 +336,142 @@
         <div class="container m-0-a page-footer">
             <h2 style="font-size: 23pt" class="fl-l left-part p-25-0">Cakes</h2>
             <div class="main-nav p-25-0">
-                    <ul class="navigation">
-                        <li><a href="#our-cakes">Наші торти</a></li>
-                        <li><a href="#individual-order">Індивідуальне замовлення</a></li>
-                        <li><a href="#reviews">Відгуки</a></li>
-                        <li><a href="#about-us">Про нас</a></li>
-                        <li><a href="#how-to-order">Як замовити</a></li>
-                        <li><a href="#contacts">Kонтакти</a></li>
-                    </ul>
+                <ul class="navigation">
+                    <li><a href="#our-cakes">Наші торти</a></li>
+                    <li><a href="#individual-order">Індивідуальне замовлення</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                    <li><a href="#about-us">Про нас</a></li>
+                    <li><a href="#how-to-order">Як замовити</a></li>
+                    <li><a href="#contacts">Kонтакти</a></li>
+                </ul>
             </div>
             <div class="fl-r social-footer">
-                    <div class="social instagram"><a href="#instagram_page"></div>
-                    <div class="social vk"><a href="#vk_page"></a></div>
+                <div class="social instagram"><a href="#instagram_page"></div>
+                <div class="social vk"><a href="#vk_page"></a></div>
             </div>
             <div class="line"></div>
             <p class="copyright">&#9400; 2018 Cakes</p>
         </div>
     </footer>
+    <script>
+
+      // for step 1
+        var widthBlock1 = 335; // ширина изображения
+        var count = 2; // количество изображений(як в масиві)
+
+        var carousel = document.querySelector('.part2');
+        var list = carousel.querySelector('ul');
+        var listElems = carousel.querySelectorAll('li');
+
+        var position = 0; // текущий сдвиг влево
+        carousel.querySelector('.btn-left-move').onclick = function () {
+            // сдвиг влево
+            // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+            position = Math.min(position + widthBlock1 * count, 0)
+            list.style.marginLeft = position + 'px';
+        };
+        carousel.querySelector('.btn-right-move').onclick = function () {
+            // сдвиг влево
+            // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+            position = Math.max(position - widthBlock1 * count, -widthBlock1 * (listElems.length - count));
+            list.style.marginLeft = position + 'px';
+        };
+
+        // for step 3
+        var widthBlock2 = 420;
+        
+        var carousel2 = document.querySelector('.part5');
+        var secondList = carousel2.querySelector('ul');
+        var secondListElems = carousel2.querySelectorAll('li');
+        var position = 0; // текущий сдвиг влево
+        carousel2.querySelector('.move-left').onclick = function () {
+            // сдвиг влево
+            // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+            position = Math.min(position + widthBlock2 * count, 0)
+            secondList.style.marginLeft = position + 'px';
+        };
+        carousel2.querySelector('.move-right').onclick = function () {
+            // сдвиг влево
+            // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+            position = Math.max(position - widthBlock2 * count, -widthBlock2 * (secondListElems.length - count));
+            secondList.style.marginLeft = position + 'px';
+        };
+
+        // for the form 
+        var carousel = document.querySelector('.part4');
+            var cakeSize = '';
+            var formSize = document.getElementById('size');
+
+            carousel.querySelector('.size-1').onclick = function () {
+            cakeSize = '17-18 см (1кг - 6 персон)';
+            return formSize.value = cakeSize;
+            };
+            carousel.querySelector('.size-2').onclick = function () {
+            cakeSize = '23-24 см (10-12 персон)';
+            return formSize.value = cakeSize;
+            };
+            carousel.querySelector('.size-3').onclick = function () {
+            cakeSize = 'Два яруси 25 і 20 см (15-20 персон)';
+            return formSize.value = cakeSize;
+            };
+            carousel.querySelector('.size-4').onclick = function () {
+            cakeSize = 'Три яруси 30, 25 і 18 см (25-30 персон)';
+            return formSize.value = cakeSize;
+            };
+            
+            // cake type
+            var type = document.querySelector('.step-1');
+            var cakeType = '';
+            var formType = document.getElementById('cake');
+
+            type.querySelector('.cake-1').onclick = function () {
+                cakeType = 'Шоколадний ганаш';
+                return formType.value = cakeType;
+            };
+            type.querySelector('.cake-2').onclick = function () {
+                cakeType = 'Вершковий сир';
+                return formType.value = cakeType;
+            };
+            type.querySelector('.cake-3').onclick = function () {
+                cakeType = 'Полуниця Маскарпоне';
+                return formType.value = cakeType;
+            };
+
+            //cake topping
+            var Topping = document.querySelector('.step-3');
+            var cakeTopping = '';
+            var formTopping = document.getElementById('topping');
+        
+            Topping.querySelector('.topping-1').onclick = function () {
+                cakeToppinge = 'Ягідне асорті';
+                return formTopping.value = cakeToppinge;
+            };
+            Topping.querySelector('.topping-2').onclick = function () {
+                cakeToppinge = 'Маршмеллоу';
+                return formTopping.value = cakeToppinge;
+            };
+            Topping.querySelector('.topping-3').onclick = function () {
+                cakeToppinge = 'Хрусткі горішки';
+                return formTopping.value = cakeToppinge;
+            };
+            Topping.querySelector('.topping-4').onclick = function () {
+                cakeToppinge = 'Шоколадне обрамлення';
+                return formTopping.value = cakeToppinge;
+            };
+            Topping.querySelector('.topping-5').onclick = function () {
+                cakeToppinge = 'Спокусливі квіти';
+                return formTopping.value = cakeToppinge;
+            };
+            Topping.querySelector('.topping-6').onclick = function () {
+                cakeToppinge = 'Улюблені герої';
+                return formTopping.value = cakeToppinge;
+            };
+            Topping.querySelector('.topping-7').onclick = function () {
+                cakeToppinge = 'Кремові рози';
+                return formTopping.value = cakeToppinge;
+            };
+
+    </script>
 </body>
 
 </html>
