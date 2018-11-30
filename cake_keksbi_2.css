@@ -561,12 +561,40 @@ input[type="text"] {
     width: 200px;
     height: auto;
 }
+.review-photo-2 {
+    border-radius: 50%;
+}
+.review-conteiner {
+    width: 700px;
+    height: 215px;
+    overflow: hidden;
+    position: relative;
+}
+.review-list {
+    width: 5000px;
+    height: 215px;
+    transition: margin-left 250ms;
+}
+.review-list li {
+    float: left;
+    padding: 5px;
+    display: flex;
+    width: 690px;
+}
+
+.review-part {
+    width: 450px;
+    margin-left: 30px;
+}
+/* this part was temporary removed 
 .show-review dl {
     width: 770px;
+    height: 200px;
     margin: 0;
     padding: 0;
     position: relative;
     top: 0;
+    overflow: hidden;
 }
 .show-review dt {
     margin: 0;
@@ -588,6 +616,7 @@ input[type="text"] {
 .show-review dd p {
     width: 500px;
 }
+*/
 .show-review a {
     color: #f50049;
     text-decoration: underline;
