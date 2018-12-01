@@ -1,17 +1,18 @@
-body {
-    max-width: 320px;
-    height: auto;
+body{
     background-color:#fbebea;
     margin: 0 auto;
     padding: 0;
+    max-width: 1366px;
+    height: auto;
     color: #2d2829;
+    font-size: 13pt;
     font-family: 'times new roman';
-    font-size: 8pt;
-    line-height: 10pt;
 }
-.clearfix::after {
+/*font-family: 'Ruslan Display', cursive; - for main text
+font-family: 'Indie Flower', cursive;*/
+.clearfix/*::after*/ {
     content: "";
-    display: table;
+    /*display: table;*/
     clear: both;
 }
 .fl-l {
@@ -21,26 +22,37 @@ body {
 .fl-r {
     float: right; 
 }
+
 .m-30-a {
     margin: 30px auto;
 }
 .m-0-a {
     margin: 0 auto;
 }
+.h-1850 {
+    height: 1850px;
+}
+.h-400 {
+    height: 400px;
+}
 .t-a-center {
     text-align: center;
 }
+.hidden {
+    display: none;
+}
 a {
     text-decoration: none;
-    color: inherit;
-}
+} 
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 h2 {
+    font-size: 40pt;
     font-family: 'Indie Flower', cursive;
+    font-style: initial;
 }
 .container{
     width: 90%;
@@ -48,70 +60,63 @@ h2 {
 .article-title {
     font-family: 'times new roman';
 }
+
 header {
     width: 100%;
-    height: 400px;
-    background-image: url("cake-header.png");
+    height: 1022px;
+    background-image: url("cake_photo.png"),
+                      url("111.png"),
+                      url("222.png"),
+                      url("333.png");
     background-repeat: no-repeat;
-    
+    background-position: 100% 50px,
+                        45% 100px,
+                        40% 350px,
+                        30% 460px;
 }
-.header-1 {
-    background-color: rgba(236, 77, 144, 0.4);
-    padding-top: 0;
-    height: 35px;
-    
+
+.left-part, .main-nav, .right-part {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+.right-part{
+    margin-top: 13px;
+}
+.navigation li {
+    display: inline;
+    font-size: 13pt;
+    text-transform: uppercase;
+    padding-right: 20px;
+   
+}
+.navigation li:last-child {
+    padding-right: 0;
+}
+.navigation a {
+    color: #2d2829;
+}
+.navigation a:hover {
+    color: red;
+}
+
 .navigation {
-    display: none;
-}
-.number-header {
-    display: none;
-}
-/* modal menu - start */
-.popup-open {
-    display: block;
-    width: 100%;
-    
-    text-align: center;
-    line-height: 20px;
+    width: 940px;
+    margin-left: 50px;
+    margin-top: 13px;
 }
 
-.height-open {
-    height: 120px;
-}
-/* modal menu -finished*/
-
-.hamburger-menu {
-    display: block;
-    height: 5px;
-    width: 20px;
-    background-color: red;
-    float: right;
-    margin-top: 15px;
-    margin-right: 20px;
-}
-.hamburger-menu::before,
-.hamburger-menu::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 5px;
-    background-color: red;
+.head-line-2 {
+   margin-top: 0;
+   margin-bottom: 0;
+   font-size: 36pt;
 }
 
-.hamburger-menu::before {
-    transform: translate(0, -10px);
+.head-line {
+    font-size: 78pt;
+    margin-bottom: 0;
 }
-.hamburger-menu::after {
-    transform: translate(0, 5px);
-}
-.navigation li:hover {
-    color: white;
-    background-color: rgb(236, 77, 144);
-}
-.header-2 {
-    text-align: center;
-}
+
 .choose-cake, .order {
     background-color: #f50049;
     color: white; 
@@ -119,7 +124,8 @@ header {
     height: 50px;
     border: none;
     border-radius: 50px;
-    margin-top: 10px;
+    margin-top: 150px;
+    margin-bottom: 50px;
     font-family: 'times new roman';
 }
 
@@ -129,23 +135,25 @@ header {
 .choose-cake:active, .order:active{
     transform: translateY(5px);
 }
-
-.features {
-    margin-top: 20px;
-}
 .feature-item {
+    display: inline;
     position: relative;
     text-align: left;
     padding-left: 60px;
     padding-top: 10px;
-    padding-bottom: 30px;
+    float: left;
 }
-
+.features {
+    padding-top: 90px;
+}
+.features li:first-child{
+    padding-right: 50px;
+}
 .feature-item::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
     width: 55px;
     height: 55px;
     background-repeat: no-repeat;
@@ -157,46 +165,68 @@ header {
 .feature-delivery::before {
     background-image: url("icon_delivery.png");
 }
-
-.head-line, 
-.head-line-2 {
-    font-size: 24pt;
-    line-height: 28pt;
-    color: white;
-    text-shadow: 5px 5px 3px #2d2829;
-    margin-top: 15px;
-}
-.head-line-2 {
-    font-size: 18pt;
-    line-height: 22pt;
-    padding-top: 30px; 
+.features h2 {
+    text-align: left;
+    margin-top: 130px;
 }
 .ourcakes {
     display: flex;
+    height: 1350px;
     flex-flow: column nowrap;
-    margin-top: 90px;
 }
+.line1, .line2  {
+    display: flex;
+    flex-flow: column wrap;
+    height: 660px;
+}
+
 .cake-card {
-    width: 100%;
-    height: auto;
-    background-color: white;
-    font-size: 12pt;
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 5px lightslategray;
-    position: relative;
+   background: #ffffff;
+   position: relative;
+   margin: auto;
+   box-shadow: 5px 5px 5px lightslategray;
 }
-.cake-card h6,
-.cake-card p {
+.classic, .kids {
+   width: 690px;
+   height: 640px;
+}
+.muss, .wedding, .men, .women {
+    width: 500px;
+    height: 300px;
+}
+h6, p{
     margin: 0;
 }
-.cake-semple {
-    width: 200px;
-    height: auto;
+.ourcakes h6 {
+    font-size: 24pt;
+    margin-left: 50px;
+    margin-top: 35px;
+}
+.ourcakes p {
+    font-size: 20pt;
+    color: #6c6869;
+    margin-left: 50px;
+}
+.kids{
+    background: #f3f3f5;
+    order: 5;
+}
+.muss{
+    order: 1;
+}
+.wedding{
+    order: 2;
+}
+.men{
+    order: 3;
+}
+.women {
+    order: 4;
 }
 .ourcakes a {
     position: absolute;
-    bottom: 3px;
-    right: 10px;
+    bottom: 30px;
+    right: 50px;
 }
 
 .ourcakes a:hover {
@@ -205,6 +235,11 @@ header {
     box-shadow:3px 3px 3px #f50049;
 }
 
+.cake-semple {
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+}
 .article {
     display: flex;
     flex-flow: column nowrap;
@@ -234,49 +269,21 @@ header {
 .step-1, .step-2, .step-3 {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
 }
 .part1 {
     width: 160px;
     align-self: flex-start;
 }
-
-.step-1 .part1 {
-    padding-right: 120px;
-}
-.karusel-1 {
-    width: 670px; 
-    overflow: hidden;
-    height: 270px;
-    position: relative;
-    margin: 0 15px;
-}
-.description {
+.part3 {
     width: 300px;
-    margin-left: 30px;
+    margin-right: 30px;
 }
-.description p {
+.part3 p {
     font-size: 16pt;
-    width: 280px;
 }
-.description h3 {
-    padding: 0;
-}
-.slider{
-    transition: margin-left 250ms;
-    width: 3000px; /* CHANGE HERE IF MORE ELEMENTS IN THE LIST*/
-    height: 260px;
-}
-.slider li {
-    float: left;
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-.slider img:active {
-    border: 2px solid white;
-    box-shadow: 0 0 15px lightgrey;
-}
+
 .part2, .part5{
     display: flex;
     flex-flow: row nowrap;
@@ -395,17 +402,6 @@ header {
     display: flex;
     flex-flow: row nowrap;
 }
-.part5 ul {
-    height: 330px;
-    width: 3000px;
-}
-.karusel-2 {
-    width: 800px; 
-    overflow: hidden;
-    height: 335px;
-    position: relative;
-    margin: 0 15px;
-}
 .topping-choise {
     position: relative;
     float: left;
@@ -440,25 +436,6 @@ header {
 .topping-2::before{
     background-image: url("example2.png");
 }
-.topping-3::before{
-    background-image: url("nuts.jpg");
-}
-.topping-4::before{
-    background-image: url("Chocolate-Cage-3.jpg");
-}
-.topping-5::before{
-    background-image: url("flowers.jpg");
-}
-.topping-6::before{
-    background-image: url("cartoon.jpg");
-}
-.topping-7::before{
-    background-image: url("cream_roses.jpg");
-}
-.topping-4 span {
-    left: 100px;
-}
-
 .topping-choise:hover, .topping-choise:active {
     box-shadow: 0 0 10px lightslategray; 
 }
@@ -475,38 +452,38 @@ header {
     height: 490px;
     background-position: bottom;
 }
+
 .order-form {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 1220px;
 }
 label{
     color: #f50049;
     font-family: 'Indie Flower', cursive;
-    font-size: 12pt;
+    font-size: 16pt;
 }
 input[type="text"] {
     border:none;
     border-bottom: 2px solid #c1b0af;
-    font-size: 12pt;
-    line-height: 16pt;
-    margin-bottom: 15px;
+    font-size: 16pt;
+    line-height: 20pt;
 }
 .order {
-    font-size: 12pt;
+    font-size: 14pt;
     text-transform: uppercase;
-   margin-bottom: 20px;
+    margin-top: 40px;
 }
 .sub-title {
-    font-size: 16pt;
+    font-size: 20pt;
     padding-left: 50px;
-} 
+}
 .show-review {
     display: flex;
     flex-flow: row nowrap;
-    width: 80%;
+    width: 840px;
     margin: 0 auto;
 }
 .show-review h3 {
@@ -516,54 +493,63 @@ input[type="text"] {
     align-self: center;
 }
 .show-review img {
-    width: 100px;
+    width: 200px;
     height: auto;
 }
-.review-photo-2 {
-    border-radius: 50%;
-}
-.review-conteiner {
-    width: 60%;
-    height: auto;
-    overflow: hidden;
+.show-review dl {
+    width: 770px;
+    margin: 0;
+    padding: 0;
     position: relative;
+    top: 0;
 }
-.review-list {
-    width: 5000px;
-    height: auto;
-    transition: margin-left 250ms;
+.show-review dt {
+    margin: 0;
+    width: 210px;
+    padding-left: 20px;
 }
-.review-list li {
-    float: left;
-    padding: 5px;
-    display: flex;
-    width: 60%;
+.show-review dd {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    width: 500px;
+    min-height: 100px;
+    margin: 0;
+    font-size: 16px;
 }
-
-.review-part {
-    width: 450px;
-    margin-left: 30px;
+.show-review dd + dt {
+    margin-top: 70px;
+}
+.show-review dd p {
+    width: 500px;
 }
 .show-review a {
     color: #f50049;
     text-decoration: underline;
     font-style: italic;
 }
-#about-us {
+.about-us {
+    position: relative;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.column-2 {
-    width: 150px;
-    margin: 0 auto;
+.about-us img {
+    width: 450px;
+    height: auto;
+    display: block;
+    margin: auto;
 }
-.column-2 img {
-    width: 150px;
+.column {
+    width: 550px;
 }
-.social-icons {
-    width: 220px;
-    margin: 0 auto 10px;
+.column-1 {
+    justify-content: flex-start;
+}
+.column-1 h2 {
+    margin-top: 0px;
 }
 .social {
     display: inline-block;
@@ -593,6 +579,7 @@ input[type="text"] {
     box-shadow: 0 0 5px #6c6869;
 }
 .quote {
+    height: 300px;
     position: relative;
 }
 .quote img {
@@ -604,11 +591,11 @@ input[type="text"] {
     height: auto;
 }
 blockquote {
-    width: 80%;
+    width: 500px;
     margin: 20px auto;
     font-style: italic;
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 18pt;
     text-align: center;
 }
 .container-full-w {
@@ -704,6 +691,7 @@ blockquote {
     counter-increment: myCounter;
     content:counter(myCounter);
     color: white;
+    display: inline-block;
     line-height: 100px;
     font-size: 60pt;
     font-weight: bold;
@@ -797,4 +785,3 @@ footer{
     font-size: 16pt;
     font-weight: bold;
 }
-
