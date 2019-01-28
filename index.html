@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE HTML>
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -227,7 +227,8 @@
                             <p>юрист, 33 роки</p>
                             <br>
                             <p>Замовляла торт брауні на увілей чоловіка. Гості були в захваті. Окреме дякую за вчасну
-                            доставку. Тепер будемо замовляти торти тільки у вас для наших сімейний святкувань.&nbsp;<a>Повністю</a></p>
+                                доставку. Тепер будемо замовляти торти тільки у вас для наших сімейний
+                                святкувань.&nbsp;<a>Повністю</a></p>
                         </div>
                     </li>
                     <li class="review-item">
@@ -239,11 +240,12 @@
                             <p>програміст, 29 років</p>
                             <br>
                             <p>Замовляла торт брауні на увілей чоловіка. Гості були в захваті. Окреме дякую за вчасну
-                            доставку. Тепер будемо замовляти торти тільки у вас для наших сімейний святкувань.&nbsp;<a>Повністю</a></p>
+                                доставку. Тепер будемо замовляти торти тільки у вас для наших сімейний
+                                святкувань.&nbsp;<a>Повністю</a></p>
                         </div>
                     </li>
                 </ul>
-<!--            <dl>
+                <!--            <dl>
                     <dt>
                         <img src="review.png" alt="Фото з профілю">
                     </dt>
@@ -265,7 +267,7 @@
                             доставку. Тепер будемо замовляти торти тільки у вас для наших сімейний святкувань.&nbsp;<a>Повністю</a></p>
                     </dd>
                 </dl>
--->                
+-->
             </div>
             <div class="side-btn btn-right move-right"></div>
         </div>
@@ -283,7 +285,7 @@
             <p>Сьогодні Павло радує виробами не тільки близьких, але і тих, хто вважає за краще якісну продукцію для
                 торжества, а головним принципом є вибір натуральних інгредієнтів.</p>
             <div class="social-icons">
-                <div class="social instagram"><a href="#instagram_page"></div>
+                <div class="social instagram"><a href="#instagram_page"></a></div>
                 <div class="social vk"><a href="#vk_page"></a></div>
                 <div class="social twitter"><a href="#twitter_page"></a></div>
             </div>
@@ -294,7 +296,7 @@
     </div>
 
     <div class="container quote m-0-a">
-        <img src="right-quote.png">
+        <img src="right-quote.png" alt="Rigth quote symbol">
         <blockquote>Я за прості рецепти. В Італії це називають<br>cucina povera: коли звичайні інгредієнти<br>перетворюються
             в божественне блюдо.</blockquote>
         <img src="signature.png" alt="Підпис шефа">
@@ -307,7 +309,7 @@
             <div class="block-features">
                 <ul class="clearfix">
                     <li class="item item-product"><b>Без штучних добавок</b><br>Використовуємо натуральні інгредієнти і
-                        свіжі продукти.</b></li>
+                        свіжі продукти.</li>
                     <li class="item item-cake"><b>Свіжий торт в день свята</b><br>Торти виготовляються протягом доби до
                         відправлення</li>
                 </ul>
@@ -367,7 +369,7 @@
                 <p>bakerybypavel@list.ua</p>
                 <p>Ми в соц.мережах</p>
                 <div class="social-icons">
-                    <div class="social instagram"><a href="#instagram_page"></div>
+                    <div class="social instagram"><a href="#instagram_page"></a></div>
                     <div class="social vk"><a href="#vk_page"></a></div>
                 </div>
             </div>
@@ -388,7 +390,7 @@
                 </ul>
             </div>
             <div class="fl-r social-footer">
-                <div class="social instagram"><a href="#instagram_page"></div>
+                <div class="social instagram"><a href="#instagram_page"></a></div>
                 <div class="social vk"><a href="#vk_page"></a></div>
             </div>
             <div class="line"></div>
@@ -447,7 +449,7 @@
         carousel2.querySelector('.move-right').onclick = function () {
             // сдвиг влево
             // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-            position = Math.max(position - widthBlock2 * count, - widthBlock2 * (secondListElems.length - count));
+            position = Math.max(position - widthBlock2 * count, -widthBlock2 * (secondListElems.length - count));
             secondList.style.marginLeft = position + 'px';
         };
 
@@ -461,16 +463,17 @@
         carousel3.querySelector('.move-left').onclick = function () {
             // ссдвиг влево
             // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-           position = Math.min(position + widthBlockReview * countTwo, 0)
-           thidrList.style.marginLeft = position + 'px';
-           
+            position = Math.min(position + widthBlockReview * countTwo, 0)
+            thidrList.style.marginLeft = position + 'px';
+
         };
         carousel3.querySelector('.move-right').onclick = function () {
             // сдвиг влево
             // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-           position = Math.max(position - widthBlockReview * countTwo, - widthBlockReview * (thirdListElems.length - countTwo));
+            position = Math.max(position - widthBlockReview * countTwo, -widthBlockReview * (thirdListElems.length -
+                countTwo));
             thidrList.style.marginLeft = position + 'px';
-            
+
         };
 
         // for the form 
@@ -546,7 +549,6 @@
             cakeToppinge = 'Кремові рози';
             return formTopping.value = cakeToppinge;
         };
-
     </script>
 </body>
 
